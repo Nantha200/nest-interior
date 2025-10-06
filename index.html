@@ -1,0 +1,1739 @@
+<!doctype html>
+<html class="no-js" lang="en">
+   
+<head>
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">  
+
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta name="description" content="Transform your space with nest Interiors, a trusted interior design company offering tailored solutions for residential and commercial spaces.">
+	  <meta name="keywords" content="Interior Design, Home Interiors, Commercial Interiors, Space Planning, nest Interiors">
+	  <meta name="author" content="nest Interiors">
+	  <meta property="og:title" content="nest Interiors - Inspiring Interior Design Solutions">
+	  <meta property="og:description" content="Discover inspiring interior designs with nest Interiors. Your dream space is just a click away.">
+	  <meta property="og:image" content="images/logo.png">
+	  <meta property="og:url" content="https://www.nestinteriors.com">
+	  <meta name="robots" content="index, follow">
+	  <title>nest Interiors | Inspiring Interior Design Solutions</title>
+	  <link rel="stylesheet" href="style.css">
+      <!-- CSS
+         ============================================ -->
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Fontawesome -->
+      <link rel="stylesheet" href="css/fontawesome.css">
+      <!-- Flaticon -->
+      <link rel="stylesheet" href="css/flaticon.css">
+      <!-- Base Icons -->
+      <link rel="stylesheet" href="css/pbminfotech-base-icons.css">
+      <!-- Themify Icons -->
+      <link rel="stylesheet" href="css/themify-icons.css">
+      <!-- Slick -->
+      <link rel="stylesheet" href="css/swiper.min.css">
+      <!-- Magnific -->
+      <link rel="stylesheet" href="css/magnific-popup.css">
+      <!-- AOS -->
+      <link rel="stylesheet" href="css/aos.css">
+      <!-- Shortcode CSS -->
+      <link rel="stylesheet" href="css/shortcode.css">
+      <!-- Base CSS -->
+      <link rel="stylesheet" href="css/base.css">
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+	  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" ></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+	  <style>
+		/* load after Tailwind */
+		.form-control {
+			line-height:3.5;
+		}
+    .bg-brand {
+      background-color: #750d0f !important;
+    }
+    .text-brand {
+      color: #750d0f !important;
+    }
+    .btn-brand {
+      background-color: #750d0f;
+      border: none;
+    }
+    .btn-brand:hover {
+      background-color: #5a0a0b;
+    }
+    .rounded-2xl {
+      border-radius: 1rem;
+    }
+    .rounded-full {
+      border-radius: 50rem;
+    }
+		.pbmit-header-overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 1000; 
+			background-color:#ffff; /* Add a background color if the content behind it is distracting */
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.93); /* Optional shadow for better visibility */
+			
+		}
+		.pbmit-slider-area {
+			margin-top: calc(100px); /* Adjust this value to match the height of the fixed header */
+		}
+
+		
+
+/* General styling for buttons */
+.package-btn {
+    display: flex;
+    width: 33.3%;
+    padding: 15px;
+    background-color:rgb(179, 130, 58);
+	opacity: 0.5;
+    color: white;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+ 
+    cursor: pointer;
+	opacity: 2.5;
+}
+
+/* Pricing box */
+.pricing-box {
+    display: none; /* Initially hidden */
+
+
+    border: 1px solid var(--pbmit-global-color);
+    padding: 15px;
+    margin-top: 10px;
+	border-radius:15px;
+}
+
+/* Active pricing box */
+.pricing-box.active {
+    display: block; /* Show the active box */
+}
+
+/* Price badge */
+.price-badge {
+	background-color:rgb(179, 130, 58);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Pricing details */
+.pricing-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	color:#000000;
+}
+
+.pricing-details li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 100%;
+    }
+}
+
+
+
+/* Desktop View: Display All Packages */
+@media (min-width: 768px) {
+    .pricing-box {
+        display: block !important;
+    }
+}
+
+/* Mobile View: Show Only Selected Package */
+@media (max-width: 767px) {
+    .pricing-box {
+        display: none;
+    }
+
+    #pricing1 {
+        display: block;
+    }
+
+    .mobile-buttons .package-btn {
+        display: inline-block;
+        margin: 5px;
+        padding: 0px 0px;
+        background-color: #617511;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .mobile-buttons .package-btn:hover {
+        background-color: #acd559;
+    }
+}
+
+.read-more-btn {
+   
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+  /* Hide all pricing content in mobile view */
+.mobile-buttons button {
+    margin: 5px;
+    padding: 8px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mobile-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.mobile-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.extra-items p{
+	margin-bottom:-1px;
+}
+
+
+  
+
+
+  
+  .pbmit-sortable-link {
+	text-decoration: none;
+	color: #333;
+	padding: 10px 20px;
+	
+	display: inline-block;
+	width: 100%;  /* Ensure each link takes full width inside its li */
+	text-align: center;
+  }
+  
+  .pbmit-sortable-link:hover {
+	background-color: #f1f1f1;
+  }
+
+  .extra-items p{
+	color:#000000;
+  }
+  
+  /* Mobile view with 3 rows and 2 columns */
+  @media (max-width: 767px) {
+	.pbmit-sortable-list-ul {
+	  display: grid;  /* Switch to grid layout */
+	  grid-template-columns: repeat(3, 1fr);  /* 2 equal-width columns */
+	  grid-template-rows: repeat(2, auto);  /* 3 rows, automatic height based on content */
+	  justify-items: center;  /* Aligns the items horizontally */
+	}
+  
+	.pbmit-sortable-link {
+	  width: auto;  /* Let the link width adjust based on content */
+	  padding: 15px;  /* Adjust padding for mobile */
+	  text-align: center;  /* Ensure text inside the link is centered */
+	}
+  }
+  
+.package-title{
+	text-align:center;
+}
+  
+@media (max-width: 1200px) {
+	.navbar-toggler {
+		color:black
+   }
+}
+
+
+/* Show the button only on mobile view */
+@media (max-width: 768px) {
+    .icon-trigger {
+        display: block; /* Show on smaller screens */
+        text-align: center; /* Optional: Center the button */
+        margin: 10px auto; /* Optional: Add spacing */
+	
+    }
+}
+
+@media (max-width: 1200px) {
+	.navbar-toggler {
+		color:black
+   }
+}
+.multi-columns-row .pbmit-featured-wrapper img {
+width: 100%; /* Ensures the image fills its container */
+height: 380px; /* Sets a uniform height */
+object-fit: cover; /* Crops the image to fit while maintaining aspect ratio */
+border-radius: 8px; /* Optional: Adds rounded corners */
+transition: transform 0.3s ease; /* Optional: Smooth zoom effect on hover */
+}
+
+.multi-columns-row .pbmit-featured-wrapper img:hover {
+transform: scale(1.05); /* Optional: Slight zoom effect on hover */
+}
+
+/* Basic Styling */
+.pbmit-sortable-list-ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap; /* Allows items to wrap into rows */
+	justify-content: center; /* Centers the items horizontally */
+	gap: 5px; /* Reduces the gap between items */
+  }
+  
+  .pbmit-sortable-list-ul li {
+	margin: 0; /* Remove default margin */
+	width: 120px; /* Consistent width for each item */
+	display: flex;
+	justify-content: center; /* Centers the text inside the link */
+  }
+  
+
+  
+
+  /* Basic Styling */
+.pbmit-sortable-list-ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap; /* Allows items to wrap into rows */
+	justify-content: center; /* Centers the items horizontally */
+	gap: 5px; /* Space between items */
+  }
+  
+  .pbmit-sortable-list-ul li {
+	margin: 0; /* Remove default margin */
+	width: 100px; /* Fixed width for each item */
+	height: 40px; /* Fixed height for consistent box size */
+	display: flex;
+	align-items: center; /* Vertically center content */
+	justify-content: center; /* Horizontally center content */
+	border: 1px solid #ddd; /* Add border for outline */
+	background: #f0f0f0; /* Optional: Add background color */
+	box-sizing: border-box; /* Include padding in dimensions */
+	text-align: center;
+	border-radius:10px;
+
+  }
+  
+  /* Highlight selected link */
+  .pbmit-sortable-link.pbmit-selected {
+	background-color: #007bff; /* Highlight color */
+	color: white;
+	border-color: #007bff;
+  }
+  
+  /* Mobile view with 2 columns */
+  @media (max-width: 767px) {
+	.pbmit-sortable-list-ul {
+	  display: grid; /* Switch to grid layout */
+	  grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+	  gap: 5px; /* Space between items */
+	  justify-items: center; /* Align items horizontally */
+	}
+  
+	.pbmit-sortable-link {
+	  width: 100%; /* Stretch link to fill the box */
+	  height: 100%; /* Fill the entire box height */
+	  display: flex;
+	  align-items: center; /* Center text vertically */
+	  justify-content: center; /* Center text horizontally */
+	}
+  }
+  
+
+
+@media (max-width: 1200px) {
+	
+	.icon-trigger{
+	 margin-left: 517px;
+	}
+ }
+ @media (max-width: 790px){
+	 .icon-trigger{
+		 margin-left: 400px;
+		}
+ }
+ @media (max-width: 490px){
+	 .icon-trigger{
+		 margin-left: 100px;
+		}
+ }
+ @media (max-width: 380px){
+	 .icon-trigger{
+		 margin-left: 77px;
+		}
+ }
+
+
+
+
+
+
+ @media (max-width: 768px) {
+    .pbmit-sortable-list-ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+        grid-gap: 10px; /* Space between items */
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .pbmit-sortable-list-ul li {
+        text-align: center;
+        margin-bottom: 10px; /* Space between items */
+    }
+
+
+}
+
+
+  @media (max-width: 767px) {
+	
+	.pbmit-sortable-link {
+	  width: 200px; /* Stretch link to fill the box */
+	  height: 100%; /* Fill the entire box height */
+	  display: flex;
+	  align-items: center; /* Center text vertically */
+	  justify-content: center; /* Center text horizontally */
+	}
+  }
+
+    /* Basic Styling */
+.pbmit-sortable-list-ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap; /* Allows items to wrap into rows */
+	justify-content: center; /* Centers the items horizontally */
+
+  }
+  
+  .pbmit-sortable-list-ul li {
+	margin: 0; /* Remove default margin */
+	width: 120px; /* Fixed width for each item */
+	height: 40px; /* Fixed height for consistent box size */
+	display: flex;
+	align-items: center; /* Vertically center content */
+	justify-content: center; /* Horizontally center content */
+	border: 1px solid #ddd; /* Add border for outline */
+	background: #f0f0f0; /* Optional: Add background color */
+	text-align: center;
+
+
+  }
+
+  .pbmit-element-posts-wrapper{
+	margin-top:50px;
+  }
+
+  .pbmit-sortable-list a {
+    display: inline-block;
+    font-size: 16px;
+    padding: 8px 20px;
+    font-weight: 400;
+    min-width: 100px;
+    border-radius: 10px;
+}
+
+
+@media (min-width:480px) and (max-width: 620px) {
+    .icon-trigger {
+        margin-left: 238px;
+    }
+	.site-title{
+		    width: 262% !important;
+	}
+}
+	  </style>
+
+
+   </head>
+   <body>
+
+	<!-- page wrapper -->
+	<div class="page-wrapper">
+		
+        <!-- Header Main Area -->
+        <header class="site-header header-style-1" id="index">
+			<div class="pbmit-header-overlay">
+				<div class="pbmit-main-header-area">
+					<div class="container-fluid">
+						<div class="pbmit-header-content d-flex justify-content-between align-items-center">
+							<div class="pbmit-logo-button-area d-flex justify-content-between align-items-center">
+								<div class="site-branding">
+									<h1 class="site-title">
+										<a href="index.html">
+											<img class="logo-img" src="images/logo.png" alt="nest interiors">
+										</a>
+									</h1>
+									<div class="pbmit-sticky-corner  pbmit-top-right-corner">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="" xmlns="http://www.w3.org/2000/svg">
+										   	<path d="M20 20V0C20 16 16 20 0 20H20Z" fill="red"></path>
+										</svg>
+									</div>
+									<div class="pbmit-sticky-corner pbmit-bottom-left-corner">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										   	<path d="M20 20V0C20 12 12 20 0 20H20Z" fill="red"></path>
+										</svg>
+									</div>
+								</div>
+								<div class="pbmit-button-box">
+									<div class="pbmit-header-button">
+										<a href="tel:+91 7586080641" style="color:black">
+											<span class="pbmit-header-button-text-1" style="color:black">+91 7586080641</span>			
+											<span class="pbmit-header-button-text-2" style="color:black">tel:+91 7586080641</span>		
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="site-navigation">
+								<nav class="main-menu navbar-expand-xl navbar-light">
+									<div class="navbar-header">
+									
+											<button class="navbar-toggler" type="button">
+												<i class="pbmit-base-icon-menu-1"></i>
+											</button>
+										
+									</div>
+								
+									<div class="container-fluid">
+										<div class="navbar-header">
+											<div class="icon-trigger">
+												<button type="button" class="pbmit-button-text btn btn-info signup" data-toggle="modal" data-target="#exampleModal">
+													<i class="fas fa-user"></i>
+												</button>
+											</div>
+										</div>
+							
+									</div>
+										
+							
+									
+									<div class="pbmit-mobile-menu-bg"></div>
+									<div class="collapse navbar-collapse clearfix show" id="pbmit-menu">
+										<div class="pbmit-menu-wrap">
+											<span class="closepanel">
+												<svg class="qodef-svg--close qodef-m" xmlns="http://www.w3.org/2000/svg" width="20.163" height="20.163" viewBox="0 0 26.163 26.163">
+													<rect width="36" height="1" transform="translate(0.707) rotate(45)"></rect>
+													<rect width="36" height="1" transform="translate(0 25.456) rotate(-45)"></rect>
+												</svg>
+											</span>
+											<ul class="navigation clearfix" >
+												
+														<li class="active" style="color:black;"><a href="#index">Home</a></li>
+														<li><a href="#about" style="color:black;">About Us</a></li>
+														<li><a href="#service" style="color:black;" >Services</a></li>
+														<li><a href="#project" style="color:black;">Project</a></li>
+														<li><a href="#contact-us" style="color:black;">Contact Us</a></li>
+											</ul>
+										</div>
+									</div>
+								</nav>
+							</div>
+
+							
+							
+							<div class="pbmit-right-box d-flex align-items-center">
+								<div class="pbmit-button-box-second">
+									<a class="pbmit-btn" href="#">
+										<span class="pbmit-button-content-wrapper">
+											<button type="button" class="pbmit-button-text" data-toggle="modal" data-target="#exampleModal">
+												Book Consult
+											</button>
+										</span>
+									</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pbmit-slider-area pbmit-slider-one">
+				<div class="swiper-slider" data-autoplay="true" data-loop="true" data-dots="true" data-arrows="false" data-columns="1" data-margin="0" data-effect="fade">
+					<div class="swiper-wrapper">
+						
+						<!-- Slide1 -->
+						<div class="swiper-slide">
+							<div class="pbmit-slider-item">
+								<div class="pbmit-slider-bg" style="background-image: url('images/portfolio/t-1 (5).jpeg');"></div>
+								<div class="container">
+									<div class="row text-center">
+										<div class="col-md-12">
+											<div class="pbmit-slider-content">
+												<h5 class="pbmit-sub-title transform-top transform-delay-1">Quality Construction, Timeless Design</h5>
+												<h2 class="pbmit-title transform-bottom-1 transform-delay-2">
+													Building durable homes with style and precision.
+												</h2>												
+												<div class="pbmit-button transform-bottom-1 transform-delay-3">
+													<a class="pbmit-btn pbmit-btn-outline" href="#contact-us">
+														<span class="pbmit-button-content-wrapper">
+															<span class="pbmit-button-text">Contact Us</span>
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Slide2 -->
+						<div class="swiper-slide">
+							<div class="pbmit-slider-item">
+								<div class="pbmit-slider-bg" style="background-image: url('images/portfolio/uthamapalayam  (4).jpeg');"></div>
+								<div class="container">
+									<div class="row text-center">
+										<div class="col-md-12">
+											<div class="pbmit-slider-content">
+												<h5 class="pbmit-sub-title transform-top transform-delay-1">Your Vision, Our Expertise</h5>
+												<h2 class="pbmit-title transform-bottom-1 transform-delay-2">
+													Creating dream spaces that truly inspire living.
+												</h2>
+												<div class="pbmit-button transform-bottom-1 transform-delay-3">
+													<a class="pbmit-btn pbmit-btn-outline" href="#contact-us">
+														<span class="pbmit-button-content-wrapper">
+															<span class="pbmit-button-text">Contact Us</span>
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Slide3 -->
+						<div class="swiper-slide">
+							<div class="pbmit-slider-item">
+								<div class="pbmit-slider-bg" style="background-image: url('images/portfolio/t-1 (3).jpeg');"></div>
+								<div class="container">
+									<div class="row text-center">
+										<div class="col-md-12">
+											<div class="pbmit-slider-content">
+												<h5 class="pbmit-sub-title transform-top transform-delay-1">Interiors with Elegance</h5>
+												<h2 class="pbmit-title transform-bottom-1 transform-delay-2">
+													Stylish interiors that reflect your personality.
+												</h2>
+												<div class="pbmit-button transform-bottom-1 transform-delay-3">
+													<a class="pbmit-btn pbmit-btn-outline" href="#contact-us">
+														<span class="pbmit-button-content-wrapper">
+															<span class="pbmit-button-text">Contact Us</span>
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					
+					<!-- Decorative Corners -->
+					<div class="pbmit-slider-dots-corner">
+						<div class="pbmit-sticky-corner pbmit-top-right-corner">
+							<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+								<path d="M20 20V0C20 16 16 20 0 20H20Z" fill="red"></path>
+							</svg>
+						</div>
+						<div class="pbmit-sticky-corner pbmit-bottom-left-corner">
+							<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+								<path d="M20 20V0C20 16 16 20 0 20H20Z" fill="red"></path>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+
+        </header>
+        <!-- Header Main Area End Here -->
+
+		
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					<form action="" method="">
+						<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+						<div class="row">
+							
+							<div class="col-md-6">
+								<input type="text" class="form-control" placeholder="Your Name *" name="name" required>
+							</div>
+							<div class="col-md-6">
+								<input type="tel" class="form-control" placeholder="Your Phone *" name="phone" required>
+							</div>
+							
+							<div class="col-md-12">
+								<textarea name="message" cols="40" rows="10" class="form-control" placeholder="Message" required></textarea>
+							</div>
+							
+							<div class="col-md-12">
+								<button class="pbmit-btn pbmit-btn-outline">
+									<i class="form-btn-loader fa fa-circle-o-notch fa-spin fa-fw margin-bottom d-none"></i>
+									<span class="pbmit-button-content-wrapper">
+										<span class="pbmit-button-text">Submit Now</span>
+									</span>
+								</button>
+							</div>
+							<div class="col-md-12 col-lg-12 message-status"></div>
+						</div>
+					</form>
+				</div>
+				
+			</div>
+			</div>
+		</div>
+        <!-- Page Content -->
+        <div class="page-content">
+            
+            <!-- About --> 
+<section class="section-xl" id="about">
+    <div class="container">
+        <div class="row g-0">
+            <!-- Left Box -->
+            <div class="col-md-12 col-xl-6">
+                <div class="about-one-leftbox">
+                    <div class="ihbox-style-area">
+                        <div class="pbmit-ihbox-style-12">
+                            <div class="pbmit-ihbox-headingicon">
+                                <div class="pbmit-ihbox-icon">
+                                    <div class="pbmit-ihbox-icon-wrapper pbmit-icon-type-icon">
+                                        <i class="pbmit-xinterio-icon pbmit-xinterio-icon-award"></i>
+                                    </div>
+                                </div>
+                                <div class="pbmit-ihbox-contents">
+                                    <h2 class="pbmit-element-title">Trusted & Reliable <br>Construction Partner</h2>
+                                </div>
+                                <div class="pbmit-sticky-corner pbmit-bottom-left-corner">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M30 30V0C30 16 16 30 0 30H30Z"></path>
+                                    </svg>
+                                </div>
+                                <div class="pbmit-sticky-corner pbmit-top-right-corner">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M30 30V0C30 16 16 30 0 30H30Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Box -->
+            <div class="col-md-12 col-xl-6">
+                <div class="about-one-rightbox">
+                    <div class="pbmit-heading-subheading animation-style2">
+                        <h4 class="pbmit-subtitle">Since 2021</h4>
+                        <h2 class="pbmit-title">Building dreams with quality and care.</h2>
+                        <div class="pbmit-heading-desc">
+                            At Nest Interior & Construction, we combine creativity, modern design, and expert 
+                            engineering to deliver spaces that are stylish, functional, and long-lasting. 
+                            Whether it’s a home, interior, or commercial space, we turn ideas into reality.
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <!-- Residential Construction -->
+                        <div class="col-md-6">
+                            <article class="pbmit-miconheading-style-9">
+                                <div class="pbmit-ihbox-style-9">
+                                    <div class="pbmit-ihbox-box d-flex align-items-center">
+                                        <div class="pbmit-ihbox-icon">
+                                            <div class="pbmit-ihbox-icon-wrapper">
+                                                <div class="pbmit-icon-wrapper pbmit-icon-type-icon">
+                                                    <i class="pbmit-xinterio-icon pbmit-xinterio-icon-house-design"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pbmit-ihbox-contents">
+                                            <h2 class="pbmit-element-title">Residential Construction</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Residential Interiors -->
+                        <div class="col-md-6">
+                            <article class="pbmit-miconheading-style-9">
+                                <div class="pbmit-ihbox-style-9">
+                                    <div class="pbmit-ihbox-box d-flex align-items-center">
+                                        <div class="pbmit-ihbox-icon">
+                                            <div class="pbmit-ihbox-icon-wrapper">
+                                                <div class="pbmit-icon-wrapper pbmit-icon-type-icon">
+                                                    <i class="pbmit-xinterio-icon pbmit-xinterio-icon-offer"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pbmit-ihbox-contents">
+                                            <h2 class="pbmit-element-title">Residential Interiors</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Commercial Construction -->
+                        <div class="col-md-6">
+                            <article class="pbmit-miconheading-style-9">
+                                <div class="pbmit-ihbox-style-9">
+                                    <div class="pbmit-ihbox-box d-flex align-items-center">
+                                        <div class="pbmit-ihbox-icon">
+                                            <div class="pbmit-ihbox-icon-wrapper">
+                                                <div class="pbmit-icon-wrapper pbmit-icon-type-icon">
+                                                    <i class="pbmit-xinterio-icon pbmit-xinterio-icon-tools"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pbmit-ihbox-contents">
+                                            <h2 class="pbmit-element-title">Commercial Construction</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Quality & On-time Delivery -->
+                        <div class="col-md-6">
+                            <article class="pbmit-miconheading-style-9">
+                                <div class="pbmit-ihbox-style-9">
+                                    <div class="pbmit-ihbox-box d-flex align-items-center">
+                                        <div class="pbmit-ihbox-icon">
+                                            <div class="pbmit-ihbox-icon-wrapper">
+                                                <div class="pbmit-icon-wrapper pbmit-icon-type-icon">
+                                                    <i class="pbmit-xinterio-icon pbmit-xinterio-icon-hard-hat"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pbmit-ihbox-contents">
+                                            <h2 class="pbmit-element-title">Quality & Timely Delivery</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- About End -->  
+
+            <!-- Fid Start -->
+            <section class="section-lgb">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-xl-3">
+							<div class="pbminfotech-ele-fid-style-2">
+								<div class="pbmit-fld-contents">
+									<div class="pbmit-fld-wrap">
+										<div class="pbmit-fid-icon-title">
+											<div class="pbmit-sbox-icon-wrapper pbmit-icon-type-icon">
+												<i class="pbmit-xinterio-icon pbmit-xinterio-icon-offer"></i>
+											</div>
+											<span class="pbmit-fid-title">Happy Client Review</span>
+										</div>
+										<h4 class="pbmit-fid-inner">
+											<span class="pbmit-fid-before"></span>
+											<span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="327" data-interval="1" data-before="" data-before-style="" data-after="" data-after-style="">327</span>
+											<span class="pbmit-fid"><sup>+</sup></span>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3">
+							<div class="pbminfotech-ele-fid-style-2">
+								<div class="pbmit-fld-contents">
+									<div class="pbmit-fld-wrap">
+										<div class="pbmit-fid-icon-title">
+											<div class="pbmit-sbox-icon-wrapper pbmit-icon-type-icon">
+												<i class="pbmit-xinterio-icon pbmit-xinterio-icon-engineer"></i>
+											</div>
+											<span class="pbmit-fid-title">Work Departments</span>
+										</div>
+										<h4 class="pbmit-fid-inner">
+											<span class="pbmit-fid-before"></span>
+											<span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="35" data-interval="1" data-before="" data-before-style="" data-after="" data-after-style="">35</span>
+											<span class="pbmit-fid"><sup>+</sup></span>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3">
+							<div class="pbminfotech-ele-fid-style-2">
+								<div class="pbmit-fld-contents">
+									<div class="pbmit-fld-wrap">
+										<div class="pbmit-fid-icon-title">
+											<div class="pbmit-sbox-icon-wrapper pbmit-icon-type-icon">
+												<i class="pbmit-xinterio-icon pbmit-xinterio-icon-client"></i>
+											</div>
+											<span class="pbmit-fid-title">Our Happy Client</span>
+										</div>
+										<h4 class="pbmit-fid-inner">
+											<span class="pbmit-fid-before"></span>
+											<span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="327" data-interval="1" data-before="" data-before-style="" data-after="" data-after-style="">327</span>
+											<span class="pbmit-fid"><sup>+</sup></span>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3">
+							<div class="pbminfotech-ele-fid-style-2">
+								<div class="pbmit-fld-contents">
+									<div class="pbmit-fld-wrap">
+										<div class="pbmit-fid-icon-title">
+											<div class="pbmit-sbox-icon-wrapper pbmit-icon-type-icon">
+												<i class="pbmit-xinterio-icon pbmit-xinterio-icon-conversation"></i>
+											</div>
+											<span class="pbmit-fid-title">Staff  members</span>
+										</div>
+										<h4 class="pbmit-fid-inner">
+											<span class="pbmit-fid-before"></span>
+											<span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="172" data-interval="1" data-before="" data-before-style="" data-after="" data-after-style="">172</span>
+											<span class="pbmit-fid"><sup>+</sup></span>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </section>
+            <!-- Fid End --> 
+
+			<!-- Service Start --> 
+            <section class="pbmit-extend-animation service-one pbmit-bg-color-secondary" id="service">
+				<div class="container">
+					<div class="text-center position-relative">
+						<div class="pbmit-heading-subheading text-center animation-style2">
+							<h4 class="pbmit-subtitle">What we do</h4>
+							<h2 class="pbmit-title">What we offer for you</h2>
+						</div>
+						<div class="pbmit-service-highlight">
+							<h2>Services</h2>
+						</div>
+					</div>
+					<div class="swiper-slider" data-autoplay="false" data-loop="true" data-dots="false" data-arrows="false" data-columns="3" data-margin="30" data-effect="slide">
+						<div class="swiper-wrapper">
+							<!-- Slide1 -->
+							<article class="pbmit-ele-service pbmit-service-style-2 swiper-slide">
+								<div class="pbminfotech-post-item">
+									<div class="pbminfotech-box-content">
+										<div class="pbmit-service-image-wrapper">
+											<div class="pbmit-featured-img-wrapper">
+												<div class="pbmit-featured-wrapper">
+													<img src="images/image/construction-residential.jpg" class="img-fluid" alt="service-01">
+												</div>
+											</div>
+										</div>
+										<div class="pbmit-service-icon elementor-icon">
+											<i class=""></i>		
+										</div>
+										<div class="pbmit-content-box">
+											
+											<h3 class="pbmit-service-title">
+												<a href="#">Residential Building Construction</a>
+											</h3>
+											<div class="pbmit-service-description">
+												        <p>We build strong, durable, and stylish homes with quality craftsmanship and modern designs.</p>
+											</div>
+										</div>
+									</div>
+									<a class="pbmit-service-btn" href="#" title="Transforming Rooms">
+										<span class="pbmit-button-icon">
+											<i class="pbmit-base-icon-pbmit-up-arrow"></i>
+										</span>
+									</a>
+								</div>
+							</article>
+							<!-- Slide2 -->
+							<article class="pbmit-ele-service pbmit-service-style-2 swiper-slide">
+								<div class="pbminfotech-post-item">
+									<div class="pbminfotech-box-content">
+										<div class="pbmit-service-image-wrapper">
+											<div class="pbmit-featured-img-wrapper">
+												<div class="pbmit-featured-wrapper">
+													<img src="images/image/construction-interiors.jpg" class="img-fluid" alt="service-01">
+												</div>
+											</div>
+										</div>
+										<div class="pbmit-service-icon elementor-icon">
+											<i class=""></i>		
+										</div>
+										<div class="pbmit-content-box">
+											
+											<h3 class="pbmit-service-title">
+												<a href="#">Residential Interiors</a>
+											</h3>
+											<div class="pbmit-service-description">
+      											  <p>Transforming living spaces into elegant, comfortable, and personalized interiors that inspire.</p>
+											</div>
+										</div>
+									</div>
+									<a class="pbmit-service-btn" href="#" title="Weaving Dreams">
+										<span class="pbmit-button-icon">
+											<i class="pbmit-base-icon-pbmit-up-arrow"></i>
+										</span>
+									</a>
+								</div>
+							</article>
+							<!-- Slide3 -->
+							<article class="pbmit-ele-service pbmit-service-style-2 swiper-slide">
+								<div class="pbminfotech-post-item">
+									<div class="pbminfotech-box-content">
+										<div class="pbmit-service-image-wrapper">
+											<div class="pbmit-featured-img-wrapper">
+												<div class="pbmit-featured-wrapper">
+													<img src="images/image/commericial.jpg" class="img-fluid" alt="service-01">
+												</div>
+											</div>
+										</div>
+										<div class="pbmit-service-icon elementor-icon">
+											<i class=""></i>		
+										</div>
+										<div class="pbmit-content-box">
+											
+											<h3 class="pbmit-service-title">
+												<a href="#">Commercial Building Construction</a>
+											</h3>
+											<div class="pbmit-service-description">
+												        <p>Delivering innovative commercial spaces that combine functionality, style, and efficiency.</p>
+											</div>
+										</div>
+									</div>
+									<a class="pbmit-service-btn" href="#" title="Interior Decorator">
+										<span class="pbmit-button-icon">
+											<i class="pbmit-base-icon-pbmit-up-arrow"></i>
+										</span>
+									</a>
+								</div>
+							</article>
+							
+						</div>
+					</div>
+					
+				</div>
+            </section>
+            <!-- Service End -->
+
+			<!-- Ihbox Start -->
+			
+			
+			
+            <!-- Ihbox End --> 
+ 
+			<!-- Marquee Start --> 
+			<section class="marquee-one">
+				<div class="container-fluid p-0">
+					<div class="swiper-slider marquee">
+						<div class="swiper-wrapper">
+							<article class="pbmit-marquee-effect-style-1 swiper-slide">
+								<div class="pbmit-tag-wrapper">
+									<h2 class="pbmit-element-title" data-text="Master Bedroom ">
+										Residential Building Construction
+									</h2>
+								</div>
+							</article>
+							<article class="pbmit-marquee-effect-style-1 swiper-slide">
+								<div class="pbmit-tag-wrapper">
+									<h2 class="pbmit-element-title" data-text="Living Room">
+										Residential Interiors
+									</h2>
+								</div>
+							</article>
+							<article class="pbmit-marquee-effect-style-1 swiper-slide">
+								<div class="pbmit-tag-wrapper">
+									<h2 class="pbmit-element-title" data-text="Kitchen">
+										Commercial Building Construction
+									</h2>
+								</div>
+							</article>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+            <!-- Marquee End -->
+
+<!-- Portfolio Start -->
+<div class="page-content" id="project">   
+    <section class="section-md pbmit-sortable-yes pbmit-element-column-four">
+        <div class="container-fluid px-4">
+            <div class="pbmit-sortable-list">
+                <ul class="pbmit-sortable-list-ul">
+                    <li><a href="#" class="pbmit-sortable-link pbmit-selected" data-sortby="*">All</a></li>
+                    <li><a href="#" class="pbmit-sortable-link" data-sortby="theni">Theni</a></li>
+                    <li><a href="#" class="pbmit-sortable-link" data-sortby="uthamapalayam" style="margin-right: 70px;">uthamapalayam</a></li>
+                    <li><a href="#" class="pbmit-sortable-link" data-sortby="cumbum">Cumbum</a></li>
+                    <li><a href="#" class="pbmit-sortable-link" data-sortby="ongoing">Ongoing</a></li>
+                </ul>
+            </div>
+
+            <div class="pbmit-element-posts-wrapper row multi-columns-row">
+                <!-- Portfolio Item -->
+                <article class="pbmit-ele-portfolio pbmit-portfolio-style-2 theni col-md-6 col-lg-3">
+                    <div class="pbminfotech-post-content">
+                        <div class="pbmit-featured-img-wrapper">
+                            <div class="pbmit-featured-wrapper">
+                                <img src="images/portfolio/t-1 (3).jpeg" class="img-fluid popup-img" alt="Theni Project">
+                            </div>
+                        </div>
+                        <div class="pbminfotech-box-content">
+                            <div class="pbminfotech-titlebox">
+                                <div class="pbmit-port-cat">Theni</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="pbmit-ele-portfolio pbmit-portfolio-style-2 theni col-md-6 col-lg-3">
+                    <div class="pbminfotech-post-content">
+                        <div class="pbmit-featured-img-wrapper">
+                            <div class="pbmit-featured-wrapper">
+                                <img src="images/portfolio/t-1 (4).jpeg" class="img-fluid popup-img" alt="Theni Project">
+                            </div>
+                        </div>
+                        <div class="pbminfotech-box-content">
+                            <div class="pbminfotech-titlebox">
+                                <div class="pbmit-port-cat">Theni</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="pbmit-ele-portfolio pbmit-portfolio-style-2 uthamapalayam col-md-6 col-lg-3">
+                    <div class="pbminfotech-post-content">
+                        <div class="pbmit-featured-img-wrapper">
+                            <div class="pbmit-featured-wrapper">
+                                <img src="images/portfolio/uthamapalayam  (6).jpeg" class="img-fluid popup-img" alt="uthamapalayam Project">
+                            </div>
+                        </div>
+                        <div class="pbminfotech-box-content">
+                            <div class="pbminfotech-titlebox">
+                                <div class="pbmit-port-cat">uthamapalayam</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="pbmit-ele-portfolio pbmit-portfolio-style-2 uthamapalayam col-md-6 col-lg-3">
+                    <div class="pbminfotech-post-content">
+                        <div class="pbmit-featured-img-wrapper">
+                            <div class="pbmit-featured-wrapper">
+                                <img src="images/portfolio/uthamapalayam  (2).jpeg" class="img-fluid popup-img" alt="uthamapalayam Project">
+                            </div>
+                        </div>
+                        <div class="pbminfotech-box-content">
+                            <div class="pbminfotech-titlebox">
+                                <div class="pbmit-port-cat">uthamapalayam</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+				<article class="pbmit-ele-portfolio pbmit-portfolio-style-2 cumbum col-md-6 col-lg-3">
+                    <div class="pbminfotech-post-content">
+                        <div class="pbmit-featured-img-wrapper">
+                            <div class="pbmit-featured-wrapper">
+                                <img src="images/portfolio/cumbum (1).jpeg" class="img-fluid popup-img" alt="Cumbum Project">
+                            </div>
+                        </div>
+                        <div class="pbminfotech-box-content">
+                            <div class="pbminfotech-titlebox">
+                                <div class="pbmit-port-cat">Cumbum</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+				<article class="pbmit-ele-portfolio pbmit-portfolio-style-2 cumbum col-md-6 col-lg-3">
+                    <div class="pbminfotech-post-content">
+                        <div class="pbmit-featured-img-wrapper">
+                            <div class="pbmit-featured-wrapper">
+                                <img src="images/portfolio/cumbum (2).jpeg" class="img-fluid popup-img" alt="Cumbum Project">
+                            </div>
+                        </div>
+                        <div class="pbminfotech-box-content">
+                            <div class="pbminfotech-titlebox">
+                                <div class="pbmit-port-cat">Cumbum</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+				<article class="pbmit-ele-portfolio pbmit-portfolio-style-2 cumbum col-md-6 col-lg-3">
+                    <div class="pbminfotech-post-content">
+                        <div class="pbmit-featured-img-wrapper">
+                            <div class="pbmit-featured-wrapper">
+                                <img src="images/portfolio/cumbum (3).jpeg" class="img-fluid popup-img" alt="Cumbum Project">
+                            </div>
+                        </div>
+                        <div class="pbminfotech-box-content">
+                            <div class="pbminfotech-titlebox">
+                                <div class="pbmit-port-cat">Cumbum</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+				<article class="pbmit-ele-portfolio pbmit-portfolio-style-2 ongoing col-md-6 col-lg-3">
+                    <div class="pbminfotech-post-content">
+                        <div class="pbmit-featured-img-wrapper">
+                            <div class="pbmit-featured-wrapper">
+                                <img src="images/portfolio/ongoing (1).jpeg" class="img-fluid popup-img" alt="Ongoing Project">
+                            </div>
+                        </div>
+                        <div class="pbminfotech-box-content">
+                            <div class="pbminfotech-titlebox">
+                                <div class="pbmit-port-cat">Ongoing</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+				<article class="pbmit-ele-portfolio pbmit-portfolio-style-2 ongoing col-md-6 col-lg-3">
+                    <div class="pbminfotech-post-content">
+                        <div class="pbmit-featured-img-wrapper">
+                            <div class="pbmit-featured-wrapper">
+                                <img src="images/portfolio/ongoing (2).jpeg" class="img-fluid popup-img" alt="Ongoing Project">
+                            </div>
+                        </div>
+                        <div class="pbminfotech-box-content">
+                            <div class="pbminfotech-titlebox">
+                                <div class="pbmit-port-cat">Ongoing</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Popup Modal -->
+<div id="imgModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;">
+    <span id="closeModal" style="position:absolute; top:20px; right:30px; color:white; font-size:40px; cursor:pointer;">&times;</span>
+    <img id="modalImg" src="" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
+
+<!-- JS for popup -->
+<script>
+    const popupImgs = document.querySelectorAll('.popup-img');
+    const modal = document.getElementById('imgModal');
+    const modalImg = document.getElementById('modalImg');
+    const closeBtn = document.getElementById('closeModal');
+
+    popupImgs.forEach(img => {
+        img.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            modalImg.src = img.src;
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Close modal on clicking outside image
+    modal.addEventListener('click', (e) => {
+        if(e.target === modal) modal.style.display = 'none';
+    });
+</script>
+
+			  
+			  
+            <!-- Pricing End -->
+
+			<!-- Testimonial Start -->
+            <section class="pbmit-bg-color-light testimonial-one">
+				<div class="container pbmit-col-stretched-yes pbmit-col-right">
+					<div class="pbmit-col-stretched-right">
+						<div class="row g-0">
+							<div class="col-md-12 col-lg-3">
+								<div class="pbmit-testimonialbox-left">
+									<div class="pbmit-heading-subheading animation-style2">
+										<h4 class="pbmit-subtitle">Client feedback</h4>
+										<h2 class="pbmit-title">What Our Clients Say</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-lg-9 pbmit-testimonialbox-right">
+								<div class="swiper-slider" data-autoplay="true" data-loop="true" data-dots="false" data-arrows="true" data-columns="2.6" data-margin="30" data-effect="slide">
+									<div class="swiper-wrapper">
+										<!-- Slide1 -->
+										<article class="pbmit-testimonial-style-1 swiper-slide">
+											<div class="pbminfotech-post-item">
+												<div class="pbmit-box-content-wrap">
+													<div class="pbminfotech-box-star-ratings">
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+													</div>
+													<div class="pbminfotech-box-desc">
+														<blockquote class="pbminfotech-testimonial-text">
+                        									<p>“Nest Interiors turned our house into a dream home. The interiors are elegant, practical, and perfectly suit our lifestyle. Truly satisfied with their work!”</p>
+														</blockquote>
+													</div>
+													<div class="pbminfotech-box-author">
+														<div class="pbmit-auther-content">
+															<h3 class="pbminfotech-box-title">Priya</h3>
+															<div class="pbminfotech-testimonial-detail">Cumbum</div>
+														</div>
+													</div>
+													<div class="pbminfotech-box-img">
+														<div class="pbmit-featured-img-wrapper">
+															<div class="pbmit-featured-wrapper">
+																<img src="images/icon.jpg" class="img-fluid" alt="reviewer-04">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</article>
+										<!-- Slide2 -->
+										<article class="pbmit-testimonial-style-1 swiper-slide">
+											<div class="pbminfotech-post-item">
+												<div class="pbmit-box-content-wrap">
+													<div class="pbminfotech-box-star-ratings">
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+													</div>
+													<div class="pbminfotech-box-desc">
+														<blockquote class="pbminfotech-testimonial-text">
+                       										<p>“From foundation to finishing, the team handled everything smoothly. Excellent quality in commercial building construction. Highly professional service.”</p>
+														</blockquote>
+													</div>
+													<div class="pbminfotech-box-author">
+														<div class="pbmit-auther-content">
+															<h3 class="pbminfotech-box-title">Rajesh</h3>
+															<div class="pbminfotech-testimonial-detail">Theni</div>
+														</div>
+													</div>
+													<div class="pbminfotech-box-img">
+														<div class="pbmit-featured-img-wrapper">
+															<div class="pbmit-featured-wrapper">
+																<img src="images/icon.jpg" class="img-fluid" alt="reviewer-04">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</article>
+										<!-- Slide3 -->
+										<article class="pbmit-testimonial-style-1 swiper-slide">
+											<div class="pbminfotech-post-item">
+												<div class="pbmit-box-content-wrap">
+													<div class="pbminfotech-box-star-ratings">
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+													</div>
+													<div class="pbminfotech-box-desc">
+														<blockquote class="pbminfotech-testimonial-text">
+                        									<p>“They designed my new office interiors with perfect space utilization and modern look. The execution was timely and the finishing is top-class.”</p>
+														</blockquote>
+													</div>
+													<div class="pbminfotech-box-author">
+														<div class="pbmit-auther-content">
+															<h3 class="pbminfotech-box-title">Anjali</h3>
+															<div class="pbminfotech-testimonial-detail">Theni</div>
+														</div>
+													</div>
+													<div class="pbminfotech-box-img">
+														<div class="pbmit-featured-img-wrapper">
+															<div class="pbmit-featured-wrapper">
+																<img src="images/icon.jpg" class="img-fluid" alt="reviewer-04">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</article>
+										<!-- Slide4 -->
+										<article class="pbmit-testimonial-style-1 swiper-slide">
+											<div class="pbminfotech-post-item">
+												<div class="pbmit-box-content-wrap">
+													<div class="pbminfotech-box-star-ratings">
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+													</div>
+													<div class="pbminfotech-box-desc">
+														<blockquote class="pbminfotech-testimonial-text">
+                        									<p>“We are impressed with the residential construction quality. The materials used, design, and finishing were exactly as promised. Truly reliable builders.”</p>
+														</blockquote>
+													</div>
+													<div class="pbminfotech-box-author">
+														<div class="pbmit-auther-content">
+															<h3 class="pbminfotech-box-title">Vikram</h3>
+															<div class="pbminfotech-testimonial-detail">Cumbum</div>
+														</div>
+													</div>
+													<div class="pbminfotech-box-img">
+														<div class="pbmit-featured-img-wrapper">
+															<div class="pbmit-featured-wrapper">
+																<img src="images/icon.jpg" class="img-fluid" alt="reviewer-04">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+            </section>
+            <!-- Testimonial End -->
+
+   
+
+			<!-- Video Start -->
+			<section class="pbmit-bg-color-secondary video-section-one fadeIn animated animated-slow"> 
+				<div class="pbmit-bg-overlay"></div>
+				<div class="container">
+					<div class="text-center">
+						<div class="pbmit-heading-subheading-style-1 animation-style4">
+							<h2 class="pbmit-title">
+								We create innovative <br>solutions for 
+								<span id="js-rotating">Residential Spaces, Commercial Projects, Interior Designs, Modern Living</span>
+							</h2>
+						</div>
+						<div class="play-button">
+							<a class="pbmit-icon pbmin-lightbox-video" href="">
+								<i class="fa fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Video Start -->
+			<form id="whatsappForm">
+				<section class="py-5" id="contact-us">
+					<div class="container">
+					<div class="row g-0">
+						
+						<!-- Left image + contact info -->
+						<div class="col-lg-6 mb-4 mb-lg-0">
+						<div class="position-relative h-100">
+							<img src="https://pagedone.io/asset/uploads/1696488602.png" 
+							alt="Contact Us" 
+							class="img-fluid h-100 w-100 rounded-2xl rounded-lg-start object-fit-cover">
+							
+							<h1 class="position-absolute top-0 start-0 m-4 text-white fw-bold display-6">Contact us</h1>
+							
+							<div class="position-absolute bottom-0 w-100 p-4 p-lg-5">
+							<div class="bg-white rounded-3 p-4">
+
+									<a href="tel:+919842056061" class="d-flex align-items-center mb-3 text-decoration-none">
+									<h5 class="ms-3 mb-0">📞 +91-9842056061</h5>
+									</a>
+									<a href="mailto:nestconstructioncbm@gmail.com" class="d-flex align-items-center mb-3 text-decoration-none">
+									<h5 class="ms-3 mb-0">✉ nestconstructioncbm @gmail.com</h5>
+									</a>
+									
+								<div class="d-flex align-items-start text-decoration-none">
+								<h5 class="ms-3 mb-0">
+									📍 Nest construction and interiors<br>
+									W-18 Door No 69/N-7 Post Office Road,<br>
+									Odai Street, Opposite to Vaigai Scan,<br>
+									Theni-625531
+								</h5>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+
+						<!-- Right form -->
+						<div class="col-lg-6 bg-light p-4 p-lg-5 rounded-2xl">
+						<h2 class="text-brand fw-semibold mb-4 display-6">Send Us A Message</h2>
+						
+						<div class="mb-3">
+							<input type="text" class="form-control rounded-pill" placeholder="Name" id="name" required>
+						</div>
+						<div class="mb-3">
+							<input type="email" class="form-control rounded-pill" placeholder="Email" id="email" required>
+						</div>
+						<div class="mb-3">
+							<input type="text" class="form-control rounded-pill" placeholder="Phone" id="phone">
+						</div>
+						<div class="mb-3">
+							<textarea class="form-control rounded-3" rows="4" placeholder="Message" id="message"></textarea>
+						</div>
+						<button type="submit" class="btn btn-brand w-100 text-white rounded-pill py-2">Submit</button>
+						</div>
+					</div>
+					</div>
+				</section>
+			</form>
+
+<script>
+document.getElementById("whatsappForm").addEventListener("submit", function(event){
+  event.preventDefault(); // Stop normal form submission
+
+  // Get input values
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("phone").value;
+  var message = document.getElementById("message").value;
+
+  // WhatsApp number (with country code, no + sign)
+  var whatsappNumber = "919842056061"; 
+
+  // Create WhatsApp message
+  var whatsappMessage = `Hello, I want to contact you.%0A
+*Name:* ${name}%0A
+*Email:* ${email}%0A
+*Phone:* ${phone}%0A
+*Message:* ${message}`;
+
+  // Redirect to WhatsApp
+  var whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  window.open(whatsappURL, "_blank");
+});
+</script>
+
+			<!-- Contact End -->
+
+		<!-- Page Content Start -->
+		<div class="page-content" >
+
+
+        </div>
+        <!-- Page Content End -->
+
+        <!-- footer -->
+ <footer class="footer-sec">
+    <div class="main">
+      
+      
+      <div class="logo row">
+        <div class="footer-header">
+          <img src="images/flogo.jpeg" class="manik" alt="">
+        </div>
+        <div class="logo-des">
+          <p>Nest Constructions & Interiors specializes in modern interiors, innovative designs, and quality construction. We create functional, elegant, and long-lasting spaces tailored to your lifestyle.</p>
+        </div>
+        
+        
+      </div>
+      
+      
+      
+      <div class="link row">
+        <div class="footer-header">
+          <h3>Links</h3>
+        </div>
+        
+        <div class="link-des">
+          <a href="#index" class="footer-links">🌟Home</a>
+          <a href="#about" class="footer-links">🌟About</a>
+          <a href="#service" class="footer-links">🌟Services</a>
+          <a href="#project" class="footer-links">🌟Galary</a>
+          <a href="#contact-us" class="footer-links">🌟Contact</a>
+        </div>
+        
+      </div>
+      
+      
+      <div class="link row">
+        <div class="footer-header">
+          <h3>Service</h3>
+        </div>
+        
+        <div class="link-des">
+          <a href="#" class="footer-links">🌟Residential Building Construction</a>
+          <a href="#" class="footer-links">🌟Residential Interiors</a>
+          <a href="#" class="footer-links">🌟Commercial Building Construction</a>
+		            <a href="#" class="footer-links"></a>
+          <a href="#" class="footer-links"></a>
+        </div>
+        
+      </div>
+      
+      
+    <div class="office row">
+        <div class="footer-header">
+          <h3>Office</h3>
+        </div>
+        <div class="office-des">
+          <p>📍 Theni address:
+Nest construction and interiors
+W-18 Door No 69/N-7 post office road odai street,opposite to vaigai scan, Theni-625531</p>
+          <p>📍 Cumbum office address:
+Nest construction and interiors
+76C, odaikarai street,Naatukkul,Cumbum -625516
+Theni district</p>
+         <a href="#">📞 +91-9842056061</a>
+          
+          <p class = "num">✉️ nestconstructioncbm@gmail.com</p>
+        </div>
+      </div>
+      
+      
+    </div>
+    <div class="copyright">
+    <hr>
+
+    <p>Copyright © 2024 <a href="nearlooks.com"> Nearlook</a> - Mart Pvt Ltd, All rights reserved.</p>
+    </div>
+  </footer>
+		  
+		  
+		
+
+    </div>
+    <!-- page wrapper End -->
+
+	<!-- Search Box Start Here -->
+	<div class="pbmit-search-overlay">
+		<div class="pbmit-icon-close">
+			<svg class="qodef-svg--close qodef-m" xmlns="http://www.w3.org/2000/svg" width="28.163" height="28.163" viewBox="0 0 26.163 26.163">
+				<rect width="36" height="1" transform="translate(0.707) rotate(45)"></rect>
+				<rect width="36" height="1" transform="translate(0 25.456) rotate(-45)"></rect>
+			</svg>
+		</div>
+		<div class="pbmit-search-outer"> 
+			<form class="pbmit-site-searchform">
+				<input type="search" class="form-control field searchform-s" name="s" placeholder="Search …">
+				<button type="submit"></button>
+			</form>
+		</div>
+	</div>
+	<!-- Search Box End Here -->
+
+	<!-- Scroll To Top -->
+	<div class="pbmit-progress-wrap">
+		<svg class="pbmit-progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+		</svg>	
+	</div>
+	<!-- Scroll To Top End -->
+
+	<!-- JS
+		============================================ -->
+	<!-- jQuery JS -->
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- jquery Waypoints JS -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- jquery Appear JS -->
+	<script src="js/jquery.appear.js"></script>
+	<!-- Numinate JS -->
+	<script src="js/numinate.min.js"></script>
+	<!-- Slick JS -->
+	<script src="js/swiper.min.js"></script>
+	<!-- Magnific JS -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- Circle Progress JS -->
+	<script src="js/circle-progress.js"></script> 
+	<!-- countdown JS -->
+	<script src="js/jquery.countdown.min.js"></script> 
+	<!-- masonry JS -->
+	<script src="js/masonry.min.js"></script> 
+	<!-- AOS -->
+	<script src="js/aos.js"></script>
+	<!-- GSAP -->
+	<script src='js/gsap.js'></script>
+	<!-- Scroll Trigger -->
+	<script src='js/ScrollTrigger.js'></script>
+	<!-- Split Text -->
+	<script src='js/SplitText.js'></script>
+	<!-- Magnetic -->
+	<script src='js/magnetic.js'></script>
+	<!-- Isotope JS -->
+	<script src="js/isotope.pkgd.min.js"></script>
+	<!-- Morphext JS -->
+	<script src="js/morphext.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<!-- GSAP Animation -->
+	<script src='js/gsap-animation.js'></script>
+	<!-- Scripts JS -->
+	<script src="js/scripts.js"></script>
+	  <!-- Include the Tailwind JS file -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8f473e817a1d7ea3',t:'MTczNDYwOTc1MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../cdn-cgi/challenge-platform/h/b/scripts/jsd/787bc399e22f/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8f473e817a1d7ea3","version":"2024.10.5","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"125856bf84ab44059737e93b01aa0fef","b":1}' crossorigin="anonymous"></script>
+
+   <div id="mobile-content-container"></div>
+
+   
+	
+
+
+
+
+</body>
+
+<!-- Mirrored from xinterio-demo.pbminfotech.com/html-demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2024 12:03:44 GMT -->
+</html>
